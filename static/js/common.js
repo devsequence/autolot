@@ -94,7 +94,30 @@ function tabsInner(){
         $this.addClass('active');
         tabItem.removeClass('active');
         $('.tab-item__media').removeClass('media-animation');
-        $(tabItemId).addClass('active').find('.tab-item__media').addClass('media-animation');
+        $(tabItemId).addClass('active');
+        function explode(){
+            $('.tab-item__media').addClass('media-animation');
+        }
+        setTimeout(explode, 500);
     });
 }
 tabsInner();
+
+if ($('.reviews-item').length > 3) {
+    $('.reviews-item:gt(2)').hide().removeClass('aos-init aos-animate');
+    $('.show-more').show();
+}
+$('.reviews-wrapper .show-more').on('click', function (e) {
+    var $this = $(this);
+    $this.find('span').toggleClass('hidden');
+    $('.reviews-item:gt(2)').toggle();
+});
+if ($('.product-item').length > 3) {
+    $('.product-item:gt(2)').hide().removeClass('aos-init aos-animate');
+    $('.show-more').show();
+}
+$('.catalog-wrapper .show-more').on('click', function (e) {
+    var $this = $(this);
+    $this.find('span').toggleClass('hidden');
+    $('.product-item:gt(2)').toggle();
+});

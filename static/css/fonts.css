@@ -11,9 +11,3 @@
   src: url("../fonts/FuturaPT/FuturaPT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT/FuturaPT-Bold.woff") format("woff"), url("../fonts/FuturaPT/FuturaPT-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
-
-html,
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 14px; }
