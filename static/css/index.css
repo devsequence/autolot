@@ -1386,7 +1386,7 @@ input, textarea {
     display: block;
     position: absolute;
     right: calc(100% - 1742px);
-    top: -99px;
+    bottom: 0px;
     -webkit-animation: moveRight 2s linear;
     animation: moveRight 2s linear; }
   .step-wrapper .rotate-animation {
