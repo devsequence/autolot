@@ -1303,6 +1303,17 @@ input, textarea {
     margin: 0 -9px; }
   .autolot-item {
     margin: 0 9px; }
+  .autolot-item__media{
+    overflow: hidden;
+  }
+  .autolot-item__media img{
+    cursor:pointer;
+    transition: all ease 200ms;
+    transform: scale(1);
+  }
+  .autolot-item__media:hover img{
+    transform: scale(1.1);
+  }
   .tab-item .tab-item__title {
     font-size: 36px;
     line-height: 44px; } }
